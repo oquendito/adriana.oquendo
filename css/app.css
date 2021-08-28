@@ -10,6 +10,7 @@
   content: "" !important;
   padding: 0;
 }
+
 #subheader .fa {
   margin: 0 1em;
 }
@@ -34,7 +35,6 @@
   position: relative;
   display: block;
 }
-
 
 footer {
   background-color: #333;
