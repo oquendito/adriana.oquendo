@@ -83,3 +83,11 @@ footer {
 		display: block;
 	}
 }
+$layout-breakpoint-small: 960px;
+
+@media (min-width: $layout-breakpoint-small) {
+  .hide-extra-small {
+    display: none;
+  }
+}
+
