@@ -17,7 +17,7 @@ function loadContent(url){
         contentType:'application/json',
         secure: true,
         headers: {
-          'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': '*',
         },
         success: function (data){
             $('#content').html(result);
@@ -32,7 +32,7 @@ function prepareRequest(){
             $(this).attr('data-href',$(this).attr('href'));
             $(this).removeAttr('href');
             $(this).click(function(){
-                loadContent($(this).attr('data-href').replace('http://localhost/',''));
+                loadContent($(this).attr('data-href').replace('https://felifelinos.netlify.app/index.html',''));
             });
         }
     });
@@ -48,7 +48,7 @@ function ready(first = false){
         });
         prepareRequest();
         if(first){
-            loadContent(window.location.href.replace('http://localhost/',''));
+            loadContent(window.location.href.replace('https://felifelinos.netlify.app/index.html',''));
         }
     }catch($e){
         console.log($e);
