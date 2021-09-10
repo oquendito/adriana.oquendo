@@ -1,8 +1,15 @@
 @charset "UTF-8";
 #main-menu > li {
   display: inline-block;
-  text-transform: capitalize;
+  text-transform: capitalize; 
 }
+
+@media (min-width: 960px) {
+  .hide-extra-small {
+    display: none;
+  }
+}
+
 #main-menu > li:last-child::after {
   content: "" !important;
   padding: 0;
